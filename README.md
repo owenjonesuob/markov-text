@@ -1,0 +1,1 @@
+This is a simple Markov chain-based text generator. (Work in progress!)
