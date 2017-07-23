@@ -2,9 +2,9 @@ import markovgen, random
 
 # www.gutenberg.org/cache/epub/29765/pg29765.txt
 
-shake = open("C:/Users/Owen/Documents/Coding/PythonProjects/MarkovText/webster.txt")
+webster = open("C:/Users/Owen/Documents/Coding/PythonProjects/MarkovText/webster.txt")
 
-markov = markovgen.Markov(shake, tuple_size=3)
+markov = markovgen.Markov(webster, tuple_size=3)
 
 text = markov.generate_markov_text(length=300)
 

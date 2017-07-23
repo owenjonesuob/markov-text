@@ -1,9 +1,9 @@
-import urllib
 from bs4 import BeautifulSoup
+import requests
 
 url = "http://www.churchill-society-london.org.uk/Locusts.html"
-html = urllib.urlopen(url).read()
-soup = BeautifulSoup(html)
+response = requests.get(url)
+soup = BeautifulSoup(response.content, "html.parser")
 
 text = soup.get_text()
 print(text)
